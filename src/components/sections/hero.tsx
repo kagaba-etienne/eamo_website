@@ -26,9 +26,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-gradient-to-t from-rich_black from-5% to-transparent absolute w-full h-24 z-10 bottom-0">
+      <div className="bg-gradient-to-t from-white from-5% to-transparent absolute w-full h-24 z-10 bottom-0">
         {" "}
-      </div> */}
+      </div>
     </section>
   );
 };
