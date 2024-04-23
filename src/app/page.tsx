@@ -177,7 +177,7 @@ export default function Home() {
       </nav>
 
       <div className="bg-[url('/images/nairobi.webp')] bg-fixed bg-cover bg-center">
-        <div className="bg-white/5">
+        <div className="bg-white/2">
           <div className="max-w-5xl mx-auto px-10 overflow-clip h-screen flex flex-col justify-center ">
             <div className="sponsors mb-10">
               <div>
@@ -359,6 +359,12 @@ export default function Home() {
         <ul className="list-disc flex flex-col gap-2">
           <li>
             <div>
+              <strong>April 5th - 7th, 2024</strong>
+            </div>
+            <div>Online training of all contestants.</div>
+          </li>
+          <li>
+            <div>
               <strong>April 24th, 2024</strong>
             </div>
             <div>Opening ceremony and exam day.</div>
@@ -522,7 +528,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="credits">EAMO &copy; All rights reserved.</div>
-          <div className="socials">
+          {/* <div className="socials">
             <p>Got any questions? Talk to us via:</p>
             <ul className="flex gap-5 justify-center">
               <li>
@@ -536,7 +542,7 @@ export default function Home() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
