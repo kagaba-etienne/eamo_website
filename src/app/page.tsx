@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </nav> */}
       <nav className="">
-        <div className="flex gap-10 justify-between items-center max-w-5xl mx-auto py-5 max-lg:p-10">
+        <div className="flex gap-10 justify-between items-center max-w-5xl mx-auto md:py-8 sm:py-5 py-3 max-lg:px-10">
           <div className="logo md:text-4xl text-2xl font-bold drop-shadow-2xl">
             <Link href="/" className="flex gap-3">
               <span className=" font-bold">
@@ -177,7 +177,7 @@ export default function Home() {
       </nav>
 
       <div className="bg-[url('/images/nairobi.webp')] bg-fixed bg-cover bg-center">
-        <div className="bg-white/2">
+        <div className="bg-white/1">
           <div className="max-w-5xl mx-auto px-10 overflow-clip h-screen flex flex-col justify-center ">
             <div className="sponsors mb-10">
               <div>
@@ -480,7 +480,7 @@ export default function Home() {
           Our Sponors
         </div>
         <hr />
-        <div className="flex justify-center items-center py-5">
+        <div className="flex justify-center items-center py-5 gap-2">
           <div className=" flex">
             <Image
               height={100}
