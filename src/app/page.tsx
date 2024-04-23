@@ -47,28 +47,58 @@ export default function Home() {
       </nav> */}
       <nav className="">
         <div className="flex gap-10 justify-between items-center max-w-5xl mx-auto py-5 max-lg:p-10">
-          <div className="logo text-4xl font-bold drop-shadow-2xl">
-            <Link href="/">EAMO</Link>
+          <div className="logo md:text-4xl text-2xl font-bold drop-shadow-2xl">
+            <Link href="/" className="flex gap-3">
+              <span className=" font-bold">
+                <span className="text-black">E</span>
+                <span className="">A</span>
+                <span className=" text-red-600">M</span>
+                <span className=" text-forest_green">O</span>
+              </span>{" "}
+              <div className="flex flex-col items-end">
+                <p className=" font-bold">2024</p>
+              </div>
+            </Link>
           </div>
           <ul className="sections flex text-lg max-md:hidden">
             <li className="px-2 lg:px-5 group">
-              <Link href="#about" className=" transition-all duration-300">
+              <Link
+                href="#about"
+                className=" group-hover:text-forest_green transition-all duration-300"
+              >
                 About
               </Link>
             </li>
+            <li className="px-2 lg:px-5 group">
+              <Link
+                href="#timeline"
+                className="group-hover:text-forest_green transition-all duration-300"
+              >
+                Timeline
+              </Link>
+            </li>
             <li className="px-2 lg:px-5 group drop-shadow-2xl">
-              <Link href="#goals" className=" transition-all duration-300">
+              <Link
+                href="#goals"
+                className="group-hover:text-forest_green transition-all duration-300"
+              >
                 Goals
               </Link>
             </li>
             <li className="px-2 lg:px-5 group drop-shadow-2xl">
-              <Link href="#board" className=" transition-all duration-300">
+              <Link
+                href="#board"
+                className="group-hover:text-forest_green transition-all duration-300"
+              >
                 Board
               </Link>
             </li>
             <li className="px-2 lg:px-5 group drop-shadow-2xl">
-              <Link href="#contact" className=" transition-all duration-300">
-                Contact
+              <Link
+                href="#sponsors"
+                className="group-hover:text-forest_green transition-all duration-300"
+              >
+                Sponsors
               </Link>
             </li>
           </ul>
@@ -92,11 +122,11 @@ export default function Home() {
             </div>
             <div className="menu_list absolute">
               <Fade in={menu}>
-                <ul className="sections flex flex-col text-xl">
+                <ul className="sections flex flex-col text-xl gap-2 border-2">
                   <li className="px-5 group">
                     <Link
                       onClick={() => setMenu((prev) => !prev)}
-                      className=" transition-all duration-300"
+                      className="group-hover:text-forest_green transition-all duration-300"
                       href="#about"
                     >
                       About
@@ -105,7 +135,16 @@ export default function Home() {
                   <li className="px-5 group">
                     <Link
                       onClick={() => setMenu((prev) => !prev)}
-                      className=" transition-all duration-300"
+                      className="group-hover:text-forest_green transition-all duration-300"
+                      href="#timeline"
+                    >
+                      Timeline
+                    </Link>
+                  </li>
+                  <li className="px-5 group">
+                    <Link
+                      onClick={() => setMenu((prev) => !prev)}
+                      className="group-hover:text-forest_green transition-all duration-300"
                       href="#goals"
                     >
                       Goals
@@ -114,7 +153,7 @@ export default function Home() {
                   <li className="px-5 group">
                     <Link
                       onClick={() => setMenu((prev) => !prev)}
-                      className=" transition-all duration-300"
+                      className="group-hover:text-forest_green transition-all duration-300"
                       href="#board"
                     >
                       Board
@@ -123,10 +162,10 @@ export default function Home() {
                   <li className="px-5 group">
                     <Link
                       onClick={() => setMenu((prev) => !prev)}
-                      className=" transition-all duration-300"
-                      href="#contact"
+                      className="group-hover:text-forest_green transition-all duration-300"
+                      href="#sponsors"
                     >
-                      Contact
+                      Sponsors
                     </Link>
                   </li>
                 </ul>
@@ -137,13 +176,15 @@ export default function Home() {
         <hr />
       </nav>
 
-      <div className="max-w-5xl mx-auto px-10 overflow-clip h-screen flex flex-col justify-center">
-        <div className="sponsors mb-10">
-          <div>
-            {/* <div className="header text-center text-4xl font-bold py-4">
+      <div className="bg-[url('/images/nairobi.webp')] bg-fixed bg-cover bg-center">
+        <div className="bg-white/5">
+          <div className="max-w-5xl mx-auto px-10 overflow-clip h-screen flex flex-col justify-center ">
+            <div className="sponsors mb-10">
+              <div>
+                {/* <div className="header text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold py-4">
               Our Sponors
             </div> */}
-            {/* <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
               <div className="max-lg:hidden">
                 <Image
                   height={100}
@@ -208,31 +249,80 @@ export default function Home() {
                 </div>
               </div>
             </div> */}
-          </div>
-        </div>
-        <hr />
-        <div className="text-center py-8 flex gap-10"><span className="text-[130px] font-bold">EAMO</span> <div>
-          <p className="text-[130px] font-bold">2024</p>
-          <p className="transform -translate-y-[50px] text-[32px] font-bold text-red-600">Nairobi - Kenya</p></div></div>
-        <hr />
-        <div className="py-5 text-center">
-          <p className="text-5xl text-black">The second edition of the East-African Mathematical Olympiad.</p> <br />
-          <p className="text-3xl pt-5">
-          24th-26th April 2024
-          </p>
-        </div>
-        <div className="text-center font-semibold text-5xl">
+              </div>
+            </div>
+            <hr />
+            <div className="text-center py-8 flex gap-10 justify-center">
+              <span className="text-[56px] sm:text-[72px] md:text-[94px] lg:text-[130px] font-bold">
+                <span className="text-black">E</span>
+                <span className="">A</span>
+                <span className=" text-red-600">M</span>
+                <span className=" text-forest_green">O</span>
+              </span>{" "}
+              <div className="flex flex-col items-end">
+                <p className="text-[56px] sm:text-[72px] md:text-[94px] lg:text-[130px] font-bold">
+                  2024
+                </p>
+                <p className="transform lg:-translate-y-[50px] md:-translate-y-[30px] sm:-translate-y-[25px] -translate-y-[18px] sm:text-[20px] md:text-[26px] lg:text-[32px] font-bold text-red-600">
+                  Nairobi - Kenya
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div className="py-5 text-center">
+              <p className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+                The second edition of the East-African Mathematical Olympiad.
+              </p>{" "}
+              <br />
+              <p className="lg:text-3xl md:text-2xl sm:text-xl text-lg lg:pt-5 md:pt-3 sm:pt-2 text-red-600">
+                24th-26th April 2024
+              </p>
+            </div>
+            {/* <div className="text-center font-semibold text-5xl">
           Welcome to EAMO 2024
-        </div>
-        {/* <div className="button w-full flex justify-center mt-10">
+        </div> */}
+            {/* <div className="button w-full flex justify-center mt-10">
           <Link href="#about" className=" border-2 text-lg p-3">
             About EAMO
           </Link>
         </div> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-10 mt-16" id="welcome">
+        <h3 className="text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold py-5 text-red-600">
+          Welcome To EAMO
+        </h3>
+        <hr />
+        <p className=" py-5">
+          The EAMO is a prestigious competition for students across East Africa,
+          aiming to promote and celebrate mathematical excellence. In its second
+          edition, EAMO 2024 will be held from April 24th to April 26th, 2024.
+          This year, Kenya has the honor of hosting the event, where
+          coordination and marking will take place.
+        </p>
+        <p className="py-5">
+          All competitions will be conducted online, allowing participants from
+          across East Africa to showcase their mathematical prowess in a
+          convenient and accessible manner.
+        </p>
+        <p className="">
+          Each junior team will comprise four students, while senior teams will
+          consist of seven students. Participants will tackle challenging
+          mathematical problems designed to test their problem-solving skills
+          and mathematical creativity.
+        </p>
+        <p className="py-5">
+          As we celebrate mathematical excellence in East Africa, we invite
+          students, educators, and enthusiasts to join us in this exciting
+          event. Let&apos;s come together to inspire and nurture the next
+          generation of mathematical talent in our region.
+        </p>
       </div>
 
       <div className="max-w-5xl mx-auto px-10" id="about">
-        <h3 className="text-center text-xl font-semibold py-5">
+        <h3 className="text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold py-5 mt-16 text-red-600">
           East African Mathematical Olympiad
         </h3>
         <hr />
@@ -253,9 +343,44 @@ export default function Home() {
           challenge students and push them to their limits, while also providing
           a fun and rewarding experience.
         </p>
+        <p className="py-5">
+          Last year marked the successful inaugural edition, hosted by Rwanda,
+          with seven participating countries. This year, Kenya is proud to host
+          the second edition, with participation from eight countries, further
+          cementing the Olympiad&apos;s regional significance and impact.
+        </p>
+      </div>
+      <div className="max-w-5xl mx-auto px-10" id="timeline">
+        <h3 className="text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold py-5 mt-16 text-red-600">
+          Timeline
+        </h3>
+        <hr />
+        <p className=" py-5">Here are some crucial dates in EAMO2024:</p>
+        <ul className="list-disc flex flex-col gap-2">
+          <li>
+            <div>
+              <strong>April 24th, 2024</strong>
+            </div>
+            <div>Opening ceremony and exam day.</div>
+          </li>
+          <li>
+            <div>
+              <strong>April 25th, 2024</strong>
+            </div>
+            <div>Marking and coordination.</div>
+          </li>
+          <li>
+            <div>
+              <strong>April 26th, 2024</strong>
+            </div>
+            <div>Results publishing and closing ceremony.</div>
+          </li>
+        </ul>
       </div>
       <div className="max-w-5xl mx-auto px-10 mt-16" id="goals">
-        <h3 className=" text-center text-xl font-semibold py-5">The Goals</h3>
+        <h3 className=" text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold py-5 text-red-600">
+          The Goals
+        </h3>
         <hr />
         <ul className="  list-decimal flex flex-col gap-2 py-5">
           <li>Popularizing mathematics in society</li>
@@ -275,7 +400,9 @@ export default function Home() {
         </ul>
       </div>
       <div className="max-w-5xl mx-auto px-10 mt-16" id="board">
-        <h3 className=" text-center text-xl font-semibold py-5">The Board</h3>
+        <h3 className=" text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-semibold py-5 text-red-600">
+          The Board
+        </h3>
         <hr />
         <dl className=" pt-5 grid grid-flow-row grid-cols-3 gap-y-5 py-5 max-md:grid-cols-2">
           <div className="row">
@@ -328,7 +455,7 @@ export default function Home() {
           </div>
         </dl>
         <div>
-          <h3 className="pt-10 text-lg font-semibold py-2">Adjoint Members</h3>
+          <h3 className="pt-10 text-xl font-semibold py-2">Adjoint Members</h3>
           <hr />
           <div className="row flex gap-5 pt-5">
             <div className="col-sm">
@@ -342,12 +469,56 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="max-w-5xl mx-auto px-10 mt-16" id="sponsors">
+        <div className="header text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold py-4 text-red-600">
+          Our Sponors
+        </div>
+        <hr />
+        <div className="flex justify-center items-center py-5">
+          <div className=" flex">
+            <Image
+              height={100}
+              width={295}
+              alt="media"
+              src="/images/global_talent_network.png"
+              id="mainimg"
+              className=""
+            />
+          </div>
+          <div>
+            <Image
+              height={100}
+              width={452}
+              alt="media"
+              src="/images/jane_street.webp"
+              className="imgs bg-white"
+            />
+          </div>
+          <div className="">
+            <Image
+              height={100}
+              width={450}
+              alt="media"
+              src="/images/Hence Technologies.svg"
+              className="imgs "
+            />
+          </div>
+        </div>
+      </div>
       <footer className=" mt-16">
         <hr />
         <div className="max-w-5xl mx-auto py-5 flex justify-between items-center px-10 max-md:flex-col max-md:justify-center max-md:gap-2">
-          <div className="logo">
-            <Link href={"/"} className="text-2xl font-bold">
-              EAMO 2024
+          <div className="logo md:text-4xl text-2xl font-bold drop-shadow-2xl">
+            <Link href="/" className="flex gap-3">
+              <span className=" font-bold">
+                <span className="text-black">E</span>
+                <span className="">A</span>
+                <span className=" text-red-600">M</span>
+                <span className=" text-forest_green">O</span>
+              </span>{" "}
+              <div className="flex flex-col items-end">
+                <p className=" font-bold">2024</p>
+              </div>
             </Link>
           </div>
           <div className="credits">EAMO &copy; All rights reserved.</div>
@@ -355,12 +526,12 @@ export default function Home() {
             <p>Got any questions? Talk to us via:</p>
             <ul className="flex gap-5 justify-center">
               <li>
-                <Link href={"/"}>
+                <Link href={"mailto:"}>
                   <Email fontSize="large" />
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link href={"telto:"}>
                   <Phone fontSize="large" />
                 </Link>
               </li>
