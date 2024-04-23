@@ -423,12 +423,6 @@ export default function Home() {
               <dd>Dr. Joseph Ssebuliba</dd>
             </div>
           </div>
-          <div>
-            <div className="col-sm">
-              <dt className="font-semibold">Sudan</dt>
-              <dd>Dr. Layla Sorkatti</dd>
-            </div>
-          </div>
           <div className="row">
             <div className="col-sm">
               <dt className="font-semibold">South Sudan</dt>
@@ -456,10 +450,20 @@ export default function Home() {
           <div className="row">
             <div className="col-sm">
               <dt className="font-semibold">Tanzania</dt>
-              <dd>Dr. Sylvester Rugeihyamu</dd>
+              <dd>Dr. Said Sima</dd>
             </div>
           </div>
         </dl>
+        <div>
+          <h3 className="pt-10 text-xl font-semibold py-2">Invited Country</h3>
+          <hr />
+          <div className="row flex gap-5 pt-5">
+            <div className="col-sm">
+              <dt className="font-semibold">Bhutan</dt>
+              <dd>Mr. Yeshi Dorji</dd>
+            </div>
+          </div>
+        </div>
         <div>
           <h3 className="pt-10 text-xl font-semibold py-2">Adjoint Members</h3>
           <hr />
