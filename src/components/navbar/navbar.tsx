@@ -13,22 +13,52 @@ const Navbar = () => {
       </div>
       <ul className="sections flex text-xl max-md:hidden">
         <li className="px-2 lg:px-5 group">
-          <Link href="#about" className="group-hover:text-forest_green transition-all duration-300">About</Link>
+          <Link
+            href="#about"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            About
+          </Link>
         </li>
         <li className="px-2 lg:px-5 group drop-shadow-2xl">
-          <Link href="#events" className="group-hover:text-forest_green transition-all duration-300">Events</Link>
+          <Link
+            href="#events"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            Events
+          </Link>
         </li>
         <li className="px-2 lg:px-5 group drop-shadow-2xl">
-          <Link href="#resources" className="group-hover:text-forest_green transition-all duration-300">Resources</Link>
+          <Link
+            href="#resources"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            Resources
+          </Link>
         </li>
         <li className="px-2 lg:px-5 group drop-shadow-2xl">
-          <Link href="#participants" className="group-hover:text-forest_green transition-all duration-300">Results</Link>
+          <Link
+            href="#participants"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            Results
+          </Link>
         </li>
         <li className="px-2 lg:px-5 group drop-shadow-2xl">
-          <Link href="#board" className="group-hover:text-forest_green transition-all duration-300">Board</Link>
+          <Link
+            href="#board"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            Board
+          </Link>
         </li>
         <li className="px-2 lg:px-5 group drop-shadow-2xl">
-          <Link href="#contact" className="group-hover:text-forest_green transition-all duration-300">Contact</Link>
+          <Link
+            href="#contact"
+            className="group-hover:text-forest_green transition-all duration-300"
+          >
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="small_menu md:hidden relative ">
@@ -53,18 +83,27 @@ const Navbar = () => {
           <Fade in={menu}>
             <ul className="sections flex flex-col text-xl max-sm:text-black">
               <li className="px-5 group">
-                <Link onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300" href="#about">
+                <Link
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
+                  href="#about"
+                >
                   About
                 </Link>
               </li>
               <li className="px-5 group">
-                <Link onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300" href="#events">
+                <Link
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
+                  href="#events"
+                >
                   Events
                 </Link>
               </li>
               <li className="px-5 group">
                 <Link
-                  onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300"
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
                   href="#resources"
                 >
                   Resources
@@ -72,19 +111,28 @@ const Navbar = () => {
               </li>
               <li className="px-5 group">
                 <Link
-                  onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300"
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
                   href="#participants"
                 >
                   Results
                 </Link>
               </li>
               <li className="px-5 group">
-                <Link onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300" href="#board">
+                <Link
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
+                  href="#board"
+                >
                   Board
                 </Link>
               </li>
               <li className="px-5 group">
-                <Link onClick={() => setMenu((prev) => !prev)} className="group-hover:text-forest_green transition-all duration-300" href="#contact">
+                <Link
+                  onClick={() => setMenu((prev) => !prev)}
+                  className="group-hover:text-forest_green transition-all duration-300"
+                  href="#contact"
+                >
                   Contact
                 </Link>
               </li>

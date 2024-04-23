@@ -45,13 +45,15 @@ const Resources = () => {
             </a>
             <p>
               A compilation of past papers from the last five years. These
-              documents include solutions and examiner&apos;s comments, which are
-              instrumental in helping students understand the rigorous standards
-              of the competition.
+              documents include solutions and examiner&apos;s comments, which
+              are instrumental in helping students understand the rigorous
+              standards of the competition.
             </p>
           </li>
         </ul>
-        <h2 className="font-semibold text-xl text-ucla_blue">Educational Resources</h2>
+        <h2 className="font-semibold text-xl text-ucla_blue">
+          Educational Resources
+        </h2>
         <p>
           In addition to past papers, we offer a variety of resources tailored
           to enhance learning and preparation for the competition:

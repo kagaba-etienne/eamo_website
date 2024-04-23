@@ -15,6 +15,7 @@ const config: Config = {
         forest_green: "#138C1D", // primary
         ucla_blue: "#4F759B", // secondary
         celadon: "#B6D7B9", // emphasize
+        blue_c: "#242933",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

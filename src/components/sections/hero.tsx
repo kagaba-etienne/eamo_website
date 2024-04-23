@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {South} from "@mui/icons-material";
+import { South } from "@mui/icons-material";
 
 const Hero = () => {
   return (

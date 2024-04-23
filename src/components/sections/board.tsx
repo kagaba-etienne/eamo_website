@@ -67,11 +67,16 @@ const Board = () => {
 
   return (
     <section id="board">
-      <div className="head text-5xl font-semibold text-center text-forest_green">Board</div>
+      <div className="head text-5xl font-semibold text-center text-forest_green">
+        Board
+      </div>
       <div className="content pt-5 flex flex-col gap-5">
         <div className="countries flex flex-wrap justify-around gap-y-5">
           {countries.map((country, idx) => (
-            <div key={idx} className="country max-w-[250px] text-center max-lg:p-4 lg:border-2 rounded-sm">
+            <div
+              key={idx}
+              className="country max-w-[250px] text-center max-lg:p-4 lg:border-2 rounded-sm"
+            >
               <div className="image">
                 <Image
                   src={country.flag}

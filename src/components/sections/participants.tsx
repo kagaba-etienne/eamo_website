@@ -18,26 +18,36 @@ const Participants = () => {
         </p>
 
         <div>
-          <h2 className="font-semibold text-xl text-ucla_blue">Access Past Results</h2>
+          <h2 className="font-semibold text-xl text-ucla_blue">
+            Access Past Results
+          </h2>
           Explore detailed results from previous editions of the East African
           Math Olympiad:
           <ul className="grid grid-rows-2 grid-cols-2 grid-flow-col gap-2 pl-10 ">
             <li>
-              <Link href="" className="underline text-forest_green/70">2023 Results</Link>
+              <Link href="" className="underline text-forest_green/70">
+                2023 Results
+              </Link>
             </li>
             <li>
-              <Link href="" className="underline text-forest_green/70">2022 Results</Link>
+              <Link href="" className="underline text-forest_green/70">
+                2022 Results
+              </Link>
             </li>
             <li>
-              <Link href="" className="underline text-forest_green/70">2021 Results</Link>
+              <Link href="" className="underline text-forest_green/70">
+                2021 Results
+              </Link>
             </li>
             <li>
-              <Link href="" className="underline text-forest_green/70">2020 Results</Link>
+              <Link href="" className="underline text-forest_green/70">
+                2020 Results
+              </Link>
             </li>
           </ul>
           <p>
-            Each link provides access to the respective year&apos;s full results,
-            including individual scores, school rankings, and country
+            Each link provides access to the respective year&apos;s full
+            results, including individual scores, school rankings, and country
             performance.
           </p>
         </div>

@@ -3,7 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="text-center">
-      <div className="head text-5xl font-semibold text-forest_green">About EAMO</div>
+      <div className="head text-5xl font-semibold text-forest_green">
+        About EAMO
+      </div>
       <div className="content pt-5 flex flex-col gap-5">
         <p>
           The East African Mathematical Olympiad is an annual high school

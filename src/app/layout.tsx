@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={`${poppins.className} bg-[url(https://eamo-official.org/static/images/awesomebg.jpg)] bg-fixed bg-cover bg-center bg-celadon/100`}
+      >
+        <div className="w-full h-full bg-blue_c/90">{children}</div>
+      </body>
     </html>
   );
 }
