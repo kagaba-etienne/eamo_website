@@ -177,7 +177,7 @@ export default function Home() {
       </nav>
 
       <div className="bg-[url('/images/nairobi.webp')] bg-fixed bg-cover bg-center">
-        <div className="bg-white/1">
+        <div className="">
           <div className="max-w-5xl mx-auto px-10 overflow-clip h-screen flex flex-col justify-center ">
             <div className="sponsors mb-10">
               <div>
@@ -254,7 +254,7 @@ export default function Home() {
             <hr />
             <div className="text-center py-8 flex gap-10 justify-center">
               <span className="text-[56px] sm:text-[72px] md:text-[94px] lg:text-[130px] font-bold">
-                <span className="text-black">E</span>
+                <span className="text-black drop-shadow-[20px_20px_50px_rgba(255,255,255,0.40)]">E</span>
                 <span className="">A</span>
                 <span className=" text-red-600">M</span>
                 <span className=" text-forest_green">O</span>
